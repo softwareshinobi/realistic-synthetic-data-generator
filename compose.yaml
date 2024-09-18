@@ -1,0 +1,17 @@
+services:
+
+    realistic-synthetic-data-generator:
+
+        container_name: realistic-synthetic-data-generator
+
+        image: softwareshinobi/realistic-synthetic-data-generator
+
+        build: 
+
+            context: .
+
+            dockerfile: Dockerfile
+
+        ports:
+
+            - 5042:5042
