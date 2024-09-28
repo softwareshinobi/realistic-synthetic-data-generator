@@ -10,7 +10,7 @@ WORKDIR /build/
 
 RUN apt update; apt install -y nodejs npm;
 
-RUN sudo npm install -g bower
+RUN npm install -g bower
 
 RUN cd /build/synner-server/src/main/resources/static/;bower install
 
