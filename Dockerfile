@@ -8,7 +8,7 @@ COPY synner-server /build/synner-server
 
 WORKDIR /build/
 
-RUN apt update; apt install nodejs npm;
+RUN apt update; apt install -y nodejs npm;
 
 RUN sudo npm install -g bower
 
