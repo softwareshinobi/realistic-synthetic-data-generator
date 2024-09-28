@@ -3,7 +3,19 @@ reset
 
 clear
 
-#mvn clean package
+ppp=`pwd`
+
+cd synner-server/src/main/resources/static
+
+bower install
+
+pwd
+cd $ppp
+pwd
+
+ls
+mvn clean package
+
 
 cd synner-server/src/main/resources/static/
 bower install
