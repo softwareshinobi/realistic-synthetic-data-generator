@@ -8,6 +8,10 @@ COPY synner-server /build/synner-server
 
 WORKDIR /build/
 
+RUN apt update; apt install nodejs npm;
+
+RUN sudo npm install -g bower
+
 RUN cd /build/synner-server/src/main/resources/static/;bower install
 
 RUN mvn clean package
