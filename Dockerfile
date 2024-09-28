@@ -14,7 +14,7 @@ RUN npm install -g bower
 
 RUN cd /build/synner-server/src/main/resources/static/;bower install
 
-RUN mvn clean package
+RUN mvn install
 
 FROM eclipse-temurin:21
 
