@@ -8,6 +8,8 @@ COPY synner-server /build/synner-server
 
 WORKDIR /build/
 
+RUN cd /build/synner-server/src/main/resources/static/;bower install
+
 RUN mvn clean package
 
 FROM eclipse-temurin:21
